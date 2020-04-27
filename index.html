@@ -27,18 +27,18 @@
                         <h2>AI -ML Webinar Registration Form</h2>
                         <div class="form-row">
                             <div class="form-group">
-                                <label for="name">First Name :</label>
-                                <input type="text" name="name" id="name" required/>
+                                <label for="first_name">First Name :</label>
+                                <input type="text" name="first_name" id="first_name" required/>
                             </div>
                             <div class="form-group">
-                                <label for="father_name">Last Name :</label>
+                                <label for="last_name">Last Name :</label>
                                 <input type="text" name="last_name" id="last_name"/>
                             </div>
                         </div>
                        
                         <div class="form-group">
                             <label for="contact no.">Phone no :</label>
-                            <input type="tel" name="phone" id="phone" pattern="[6789][0-9]{10}" required>
+                            <input type="tel" name="phone" id="phone" pattern="[0-9]{10}" required>
                         </div>
                         <div class="form-group">
                             <label for="college">College Name :</label>
@@ -113,8 +113,33 @@
 		</footer> <!-- end footer -->
     
     <!-- JS -->
+    <script src="https://www.gstatic.com/firebasejs/7.9.3/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.9.3/firebase-database.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.9.3/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyBFohS35v9oDh-3c1AtJaxA21qEtvJMAV8",
+    authDomain: "samavesh-robotics.firebaseapp.com",
+    databaseURL: "https://samavesh-robotics.firebaseio.com",
+    projectId: "samavesh-robotics",
+    storageBucket: "samavesh-robotics.appspot.com",
+    messagingSenderId: "913347101125",
+    appId: "1:913347101125:web:2d6c57d76ada168a094bac",
+    measurementId: "G-19XQZ8P85S"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
+
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="js/main.js"></script>
-    
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+
 </body>
 </html>
