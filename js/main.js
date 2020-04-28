@@ -1,9 +1,9 @@
-(function($) {
+/*(function($) {
 
   $('#reset').on('click', function(){
       $('#register-form').reset();
-  });
-	
+  });*/
+
 var firstname = document.getElementById("first_name")
 		var lastname = document.getElementById("last_name")
 		var phone = document.getElementById("phone")
@@ -48,4 +48,4 @@ sub1.addEventListener('click',(e)=>{
 
 });
 
-})(jQuery);
+/*})(jQuery);*/
