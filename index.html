@@ -20,10 +20,10 @@
         <div class="container">
             <div class="signup-content">
                 <div class="signup-img">
-                    <img src="images/signup-img.jpg" alt="">
+                    <img src="images/poster.jpg" alt="">
                 </div>
                 <div class="signup-form">
-                    <form method="POST" class="register-form" id="register-form">
+                    <form method="GET" class="register-form" id="register-form">
                         <h2>AI -ML Webinar Registration Form</h2>
                         <div class="form-row">
                             <div class="form-group">
@@ -58,8 +58,9 @@
                             <input type="email" name="email" id="email" required/>
                         </div>
                         <div class="form-submit">
+                            
+                            <input type="submit" onclick="check()" value="Submit Form" class="submit" name="submit" id="submit" />
                             <input type="reset" value="Reset All" class="submit" name="reset" id="reset" />
-                            <input type="submit" value="Submit Form" class="submit" name="submit" id="submit" />
                         </div>
                     </form>
                 </div>
