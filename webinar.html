@@ -18,7 +18,9 @@
     <!-- Main css -->
     <link rel="stylesheet" href="AI-ML-Page/css/style.css">
 
-    <link rel="stylesheet" href="AI-ML-Page/css/particle.css">
+    <link type="text/css" href="AI-ML-Page/css/particle.css">
+    <link rel="stylesheet" href="AI-ML-Page/css/popup.css">
+
 </head>
 <body  class="grey darken-4">
   <div id="particles-js"></div>
@@ -26,12 +28,15 @@
         <div class="main">
             <div class="container">
                 <div class="signup-content">
-                    <div class="signup-img">
+                    <div class="signup-img my-auto">                        
                         <img src="AI-ML-Page/images/webinar.jpg" alt="">
                     </div>
                     <div class="signup-form">
                         <form method="GET" class="register-form" id="register-form">
                             <h2>AI -ML Webinar Registration Form</h2>
+                            <h6>
+                                All Fields are required
+                            <h6>
                             <div class="form-row">
                                 <div class="form-group">
                                     <label for="first_name">First Name :</label>
@@ -44,7 +49,7 @@
                             </div>
                            
                             <div class="form-group">
-                                <label for="contact no.">Phone no(10 digit) :</label>
+                                <label for="contact no.">Phone Number (10-digits) :</label>
                                 <input type="tel"  name="phone" id="phone" required>
                             </div>
                             <div class="form-group">
@@ -74,6 +79,18 @@
                 </div>
             </div>
         </div>
+        <!-- Code to show Popup After Submit -->
+    <div class="popup-wrapper">
+        <div class="popup">
+            <div class="popup-close">x</div>
+            <div class="popup-content">
+                <h3>Thank You for Registering</h3>
+                <br><br>See You Tomorrow at 11 AM<br>
+                <p>Use the link below to join us:</p>
+                <a href="meet.google.com">Google Meet</a>
+            </div>
+        </div>
+    </div>
     <footer id="footer">
 			 <div class="container">
 			     <div class="row justify-content-center ">						
@@ -113,16 +130,19 @@
 				    </div>
 						<!-- /copyright -->
 						
-				    </div> 
+                    </div> 
+                    <div class = "space"><br></div>
 				 <!-- end row -->
                 </div><!-- end container -->
-		  </footer> <!-- end footer -->
+                
+          </footer> <!-- end footer -->
+          
     </div>
     
     <!-- JS -->
 
   <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
-  <script src="AI-ML-Page/js/particle.js"></script>
+  <script src="/AI-ML-Page/js/particles.js"></script>
     <script src="https://www.gstatic.com/firebasejs/7.9.3/firebase-app.js"></script>
 <script src="https://www.gstatic.com/firebasejs/7.9.3/firebase-database.js"></script>
 
