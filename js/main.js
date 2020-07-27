@@ -2,7 +2,7 @@
 const firstname = document.getElementById("first_name");
 var lastname = document.getElementById("last_name");
 var phone = document.getElementById("phone");
-var email = document.getElementById("email");
+const email = document.getElementById("email");
 var college = document.getElementById("college");
 var branch = document.getElementById("course");
 var year = document.getElementById("year");
@@ -23,7 +23,7 @@ function check(){
     else{firstname.setCustomValidity("");
         x++;
         }
-    if(phone.value.match(/^[6789]\d{9}$/)){
+    if(phone.value.match(/^\d{10}$/)){
         phone.setCustomValidity("");
         x++;
     }
@@ -51,18 +51,20 @@ function check(){
         }
     
     if(x == 5){
-        database.ref('/WEBINAR/'+firstname.value).set({
+        database.ref('/WEBINAR').push().set({
             name1 : firstname.value,
 			name2 : lastname.value,
 			phone : phone.value,
 			email : email.value,
 			college : college.value,
 			branch : branch.value,
-			year : year.value
+			feedback : year.value
             });
-        alert("Registration Done! \n ");
-        document.getElementById("register-form").submit();
-        document.getElementById("register-form").reset();
+        alert("Thanks for participating. Have a good day!! ");
+        
+            document.getElementById("register-form").submit();
+            document.getElementById("register-form").reset();
+        
         
     }
      return true;

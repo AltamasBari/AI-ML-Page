@@ -1,0 +1,157 @@
+    
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Vssut Robotics | Where Imagination Meets Innovation</title>
+    <link rel="shortcut icon" type="image/x-icon" href="AI-ML-Page/images/head1.png" />
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- Font Icon -->
+    <link rel="stylesheet" href="AI-ML-Page/fonts/material-icon/css/material-design-iconic-font.min.css">
+    <!-- Main css -->
+    <link rel="stylesheet" href="AI-ML-Page/css/style.css">
+
+    <link rel="stylesheet" href="AI-ML-Page/css/particle.css">
+</head>
+<body  class="grey darken-4">
+  <div id="particles-js"></div>
+    
+        <div class="main">
+            <div class="container">
+                <div class="signup-content">
+                    <div class="signup-img my-auto">
+                        <br>
+                        <img src="AI-ML-Page/images/webinar.jpg" alt="">
+                    </div>
+                    <div class="signup-form my-auto">
+                        <form method="GET" class="register-form" id="register-form">
+                            <h2 style="color: white;">ROS & Humanoid Webinar Feedback Form</h2>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="first_name">First Name :</label>
+                                    <input type="text" name="first_name" id="first_name" required/>
+                                </div>
+                                <div class="form-group">
+                                    <label for="last_name">Last Name :</label>
+                                    <input type="text" name="last_name" id="last_name"/>
+                                </div>
+                            </div>
+                           
+                            <div class="form-group">
+                                <label for="contact no.">Phone No. (10 digit) :</label>
+                                <input type="tel"  name="phone" id="phone" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="college">College Name :</label>
+                                    <input type="text" name="college" id="college" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="course">Branch :</label>
+                                <input type="text" name="course" id="course" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email">Email ID :</label>
+                                <input type="email" name="email" id="email" required/>
+                            </div>
+                            <div class="form-group">
+                                <label for="year">Feedback :</label>
+                                <input type="text" name="year" id="year">
+                            </div>
+                            <div class="form-submit">
+                                
+                                <input type="submit" onclick="check()" value="Submit Form" class="submit" name="submit" id="submit" />
+                                
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <footer id="footer">
+			 <div class="container">
+			     <div class="row justify-content-center ">						
+						  <!-- Footer Social Links -->
+				            <div class="col-auto">
+    							 <a href="https://www.facebook.com/vssutrobotics/" target="_blank"><i class="fa fa-facebook fa-2x"></i></a>
+                            </div>
+                            <div class="col-auto">
+    				            <a href="https://twitter.com/societyrobotics" target="_blank"><i class="fa fa-twitter fa-2x"></i></a>
+                            </div>
+
+                            <div class="col-auto">
+								<a href="https://www.youtube.com/channel/UCfrM26pYkyk8JtW-G0mcDNQ" target="_blank"><i class="fa fa-youtube fa-2x"></i></a>
+                            </div>
+                            <div class="col-auto">
+								<a href="https://www.linkedin.com/in/vssut-robotics-129434149/" target="_blank"><i class="fa fa-linkedin fa-2x"></i></a>
+                            </div>
+                            <div class="col-auto">
+								<a href="https://github.com/Vssut-Robotics" target="_blank"><i class="fa fa-github fa-2x"></i></a>
+                            </div>
+                            <div class="col-auto">
+								<a href="https://www.instagram.com/vssut_robotics/" target="_blank"><i class="fa fa-instagram fa-2x"></i></a>
+							
+                            </div>
+                    
+                    </div>
+                    <div class="row justify-content-center">
+						<!--/. End Footer Social Links -->
+
+						<!-- copyright -->
+				    <div class="copyright text-center">
+                        <a href="https://www.vssutrobotics.in">
+                                    <img src="AI-ML-Page/images/robotics2.png"alt="Vssut Robotics"/>
+                        </a>
+							
+				        <h4 style="color: white;">Design And Developed by <a href="https://www.vssutrobotics.in">VSSUT Robotics</a>. Copyright &copy; 2020. All Rights Reserved.</h4>
+				    </div>
+						<!-- /copyright -->
+						
+				    </div> 
+				 <!-- end row -->
+                </div><!-- end container -->
+		  </footer> <!-- end footer -->
+    
+    
+    <!-- JS -->
+
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+  <script src="AI-ML-Page/js/particle.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.9.3/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.9.3/firebase-database.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.9.3/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyBFohS35v9oDh-3c1AtJaxA21qEtvJMAV8",
+    authDomain: "samavesh-robotics.firebaseapp.com",
+    databaseURL: "https://samavesh-robotics.firebaseio.com",
+    projectId: "samavesh-robotics",
+    storageBucket: "samavesh-robotics.appspot.com",
+    messagingSenderId: "913347101125",
+    appId: "1:913347101125:web:2d6c57d76ada168a094bac",
+    measurementId: "G-19XQZ8P85S"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
+  
+    <script src="AI-ML-Page/vendor/jquery/jquery.min.js"></script>
+    <script src="AI-ML-Page/js/main.js"></script>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+
+</body>
+</html>

@@ -245,19 +245,11 @@ h2 {
 .clear {
   clear: both; }
 
-body {
-  background-image: url(../images/bg.jpg);    
-  font-size: 13px;
-  line-height: 1.8;
-  color: #222;
-  font-weight: 400;
-  padding: 90px 0; }
-
 .container {
   width: 1400px;
   position: relative;
   margin: 0 auto;
-  background: #fff; }
+ }
 
 .signup-img, .signup-form {
   width: 50%; }
@@ -359,6 +351,8 @@ input[type=radio] {
   input[type=radio]:checked ~ .check::before {
     background: #034b9f; }
 
+
+input{color:white}
 .form-select {
   position: relative; }
 
